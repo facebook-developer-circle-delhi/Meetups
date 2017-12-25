@@ -1,0 +1,20 @@
+<!-- basics of using JSX with React -->
+<!-- jsx, props, children, js in jsx, props overriding -->
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    const root = document.getElementById('root');
+
+
+    const elm = React.createElement('div', { className: 'container' }, 'Hello World');
+
+
+    ReactDOM.render(elm, root);
+
+  </script>
+</body>

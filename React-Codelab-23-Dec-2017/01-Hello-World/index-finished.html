@@ -1,0 +1,23 @@
+<!-- React APIs to create the most basic Hello World example. React defines it’s own createElement function that we will see works similar to document.createElement. And in place of appendChild we will use ReactDOM's render function. -->
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    const root = document.getElementById('root');
+
+    // const elm = document.createElement('div');
+    // elm.textContent = 'Hello World';
+    // elm.className = 'container';
+    // root.appendChild(elm);
+
+    const elm = React.createElement('div', { className: 'container' }, 'Hello World', ' Goodbye World');
+    // const elm = React.createElement('div', { className: 'container', children: ['Hello World', ' Goodbye World'] });
+
+    ReactDOM.render(elm, root);
+
+  </script>
+</body>

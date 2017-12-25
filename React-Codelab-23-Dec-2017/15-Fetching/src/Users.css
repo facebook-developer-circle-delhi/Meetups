@@ -1,0 +1,34 @@
+.userApp {
+  width: 400px;
+}
+
+.userApp > *{
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+  background:rgb(213, 218, 248);
+
+}
+
+.userData {
+  padding: 10px;
+  height: 95px;
+  border: solid rgb(177, 227, 247) 1px;
+  text-transform: capitalize;
+}
+
+li img{
+  /* border-radius: 50%; */
+  margin-right: 20px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  float: left;
+}

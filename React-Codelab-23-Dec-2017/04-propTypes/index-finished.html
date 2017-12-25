@@ -1,0 +1,62 @@
+<!-- React prop-types -->
+<!-- prop-types, prop-types lib, prop-types in prod, prop-types in class -->
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<!-- prop-types lib -->
+<!-- <script crossorigin src="https://unpkg.com/prop-types@15.6.0/prop-types.js"></script> -->
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const root = document.getElementById('root');
+
+
+    function Message(props) {
+      return (
+        <div>Message: {props.msg}</div>
+      );
+    }
+
+    Message.propTypes = {
+      msg(props, propName, componentName) {
+        if (typeof props[propName] !== 'string')
+          return new Error(`Hey you should pass string for ${propName}.`);
+      }
+    };
+
+
+
+    // Message.propTypes = {
+    //   msg: PropTypes.string.isRequired,
+    // }
+
+
+
+    /* class based component */
+
+    // class Message extends React.Component {
+    //   static propTypes = {
+    //     msg: PropTypes.string.isRequired,
+    //   }
+
+    //   render() {
+    //     return (
+    //       <div>Message: {this.props.msg}</div>
+    //     );
+    //   }
+    // }
+
+
+
+    const elm = (
+      <div className="container">
+        <Message />
+      </div>
+    );
+
+    ReactDOM.render(elm, root);
+  </script>
+</body>

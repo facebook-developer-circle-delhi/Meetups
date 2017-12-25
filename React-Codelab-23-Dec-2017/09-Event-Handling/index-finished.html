@@ -1,0 +1,68 @@
+<!-- Event Handling -->
+<!-- React's synthetic event system which allows React to use the same event system regardless of the platform (react-native or react-dom). Event delegation and optimization. -->
+<!-- inline handler, inline call(), solid input values, controlled input, -->
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const root = document.getElementById('root');
+
+
+    const state = {
+      clicksCount: 0,
+      inputValue: ''
+    };
+
+
+    function handleButtonClick() {
+      setState({ clicksCount: state.clicksCount + 1 });
+    }
+
+    function handleInputChange(e) {
+      setState({ inputValue: e.target.value });
+    }
+
+    function App(params) {
+      return (
+        <div>
+          <p>
+            Click Counter: {state.clicksCount}
+          </p>
+          <p>
+            <button onClick={handleButtonClick}>
+              Click Me  👈
+          </button>
+          </p>
+          <p>
+            Input Value: {state.inputValue}
+          </p>
+          <p>
+            <input
+              onChange={handleInputChange}
+              value={state.inputValue}
+            />
+          </p>
+        </div>
+      )
+    }
+
+    function setState(newState) {
+      Object.assign(state, newState);
+      // Object.assign({}, state, newState);
+      renderApp();
+    }
+
+    function renderApp() {
+      ReactDOM.render(<App />, root);
+    }
+
+    renderApp();
+
+
+  </script>
+</body>

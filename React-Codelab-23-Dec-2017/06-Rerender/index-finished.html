@@ -1,0 +1,75 @@
+<!-- React Rerendering -->
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const root = document.getElementById('root');
+
+
+    function ReactTick() {
+      const time = new Date().toLocaleTimeString();
+      const elm = (
+        <div className="container">
+          Time: {time}
+        </div>
+      );
+
+      ReactDOM.render(elm, root);
+    }
+
+
+
+    function NaiveTick() {
+      const time = new Date().toLocaleTimeString();
+      const elm = `<div className="container">
+                   Time: ${time}
+                 </div>`;
+
+      root.innerHTML = elm;
+    }
+
+
+    /* checkbox example */
+
+    function ReactCheckbox() {
+      const time = new Date().toLocaleTimeString();
+
+      const elm = (
+        <div className="container">
+          <div>
+            Time: {time}
+          </div>
+          <div>
+            React Checkbox: <input type="checkbox" />
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(elm, root);
+    }
+
+
+
+    function NaiveChecbox() {
+      const time = new Date().toLocaleTimeString();
+      const elm = `
+      <div className="container">
+        <div>
+          Time: ${time}
+        </div>
+        <div>
+          Naive Checkbox: <input type="checkbox" />
+        </div>
+      </div>`;
+
+      root.innerHTML = elm;
+    }
+
+    setInterval(ReactTick, 1000);
+  </script>
+</body>
