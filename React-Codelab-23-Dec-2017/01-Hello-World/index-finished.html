@@ -1,5 +1,13 @@
-<!-- React APIs to create the most basic Hello World example. React defines it’s own createElement function that we will see works similar to document.createElement. And in place of appendChild we will use ReactDOM's render function. -->
+<!--
+  React APIs to create the most basic Hello World example.
+  React defines it’s own createElement function that we will see works similar to document.createElement.
+  And in place of appendChild we will use ReactDOM's render function.
+-->
 
+<!--
+  UMD React and React-Dom Builds
+  This will bring in React to our projects
+-->
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
@@ -14,10 +22,15 @@
     // elm.className = 'container';
     // root.appendChild(elm);
 
-    const elm = React.createElement('div', { className: 'container' }, 'Hello World', ' Goodbye World');
+    const elm = React.createElement('div',
+      { className: 'container' },
+      'Hello World', ' Goodbye World'
+    ); // Creates the element
+
     // const elm = React.createElement('div', { className: 'container', children: ['Hello World', ' Goodbye World'] });
 
-    ReactDOM.render(elm, root);
+    ReactDOM.render(elm, root); // Simply inserts the element in the DOM
 
   </script>
+
 </body>

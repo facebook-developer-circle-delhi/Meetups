@@ -1,6 +1,10 @@
 <!-- React prop-types -->
 <!-- prop-types, prop-types lib, prop-types in prod, prop-types in class -->
 
+<!--
+  Proptypes is typechecking for props
+ -->
+
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -20,6 +24,8 @@
       );
     }
 
+    // Lets build our own Proptypes
+
     Message.propTypes = {
       msg(props, propName, componentName) {
         if (typeof props[propName] !== 'string')
@@ -28,6 +34,7 @@
     };
 
 
+    // Or use the PropTypes lib that already has everything we will need
 
     // Message.propTypes = {
     //   msg: PropTypes.string.isRequired,
@@ -36,6 +43,9 @@
 
 
     /* class based component */
+
+    // In a class based component, simply declare a static propTypes
+    // there is also defaultProps that returns the default set of props
 
     // class Message extends React.Component {
     //   static propTypes = {

@@ -9,10 +9,10 @@
     "start": "parcel index.html"
   },
   "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
     "react-addons-css-transition-group": "^15.6.2",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",

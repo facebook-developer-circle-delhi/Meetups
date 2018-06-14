@@ -1,4 +1,8 @@
-<!-- React APIs to create the most basic Hello World example. React defines it’s own createElement function that we will see works similar to document.createElement. And in place of appendChild we will use ReactDOM's render function. -->
+<!--
+  React APIs to create the most basic Hello World example.
+  React defines it’s own createElement function that we will see works similar to document.createElement.
+  And in place of appendChild we will use ReactDOM's render function.
+-->
 
 <body>
   <div id="root"></div>
@@ -6,10 +10,12 @@
   <script type="text/javascript">
     const root = document.getElementById('root');
 
-    const elm = document.createElement('div');
+    const elm = document.createElement('div'); // Simple old way DOM creating node
+
     elm.textContent = 'Hello World';
     elm.className = 'container';
-    root.appendChild(elm);
+    root.appendChild(elm); // Simple old way DOM append
 
   </script>
+
 </body>

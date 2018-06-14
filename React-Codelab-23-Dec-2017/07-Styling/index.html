@@ -28,42 +28,41 @@
 
   <script type="text/babel">
 
-
-  const element = (
-    <div>
-      <div
-        className="box box--small"
-        style={{backgroundColor: 'gold'}}
-      >
-        Box
+  // className instead of class
+    const element = (
+      <div>
+        <div
+          className="box box--small"
+          style={{backgroundColor: 'gold'}}
+        >
+          Box
+        </div>
       </div>
-    </div>
-  )
+    )
 
 
 
+    // const Box = (props) => {
+    //     return <div
+    //       className={`box box--${props.size}`}
+    //       style={{ backgroundColor: 'gold' }}
+    //     >{props.children}
+    //     </div>
+    //   }
 
-  // const Box = (props) => {
-  //     return <div
-  //       className={`box box--${props.size}`}
-  //       style={{ backgroundColor: 'gold' }}
-  //     >{props.children}
-  //     </div>
-  //   }
-
-  //   const element = (
-  //     <div>
-  //       <Box size="medium">
-  //         Box
-  //     </Box>
-  //     </div>
-  //   );
-
+    //   const element = (
+    //     <div>
+    //       <Box size="medium">
+    //         Box
+    //     </Box>
+    //     </div>
+    //   );
 
 
-  ReactDOM.render(
-    element,
-    document.getElementById('root')
-  )
+
+    ReactDOM.render(
+      element,
+      document.getElementById('root')
+    )
   </script>
 </body>

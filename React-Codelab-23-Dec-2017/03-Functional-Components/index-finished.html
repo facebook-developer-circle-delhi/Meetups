@@ -24,9 +24,14 @@
 
 
 
-    const message = (props) => <div>{props.msg}</div>;
-    // const Message = (props) => <div>{props.msg}</div>;
+    const message = (props) => <div>{props.msg}</div>;          // Functional Component
+    // const Message = (props) => <div>{props.msg}</div>;       // Takes in in props and returns a component
     // const Message = (props) => <div>{props.children}</div>;
+
+
+    // Functional components can be simply invoked like normal functions
+    // Interpolating them in JSX
+    // Returns a component
 
     // const elm = (
     //   <div className="container">
@@ -37,6 +42,7 @@
     // );
 
 
+    // This is same as creating a element with React.createElement and passing the props
 
     // const elm = (
     //   <div className="container">
@@ -49,18 +55,24 @@
 
     /* JSXing */
 
+
+    // Small first letter => Simple DOM element
+    // Captial first letter => JSX Element
+
     // const elm = (
     //   <div className="container">
     //     {/*<message /> */} {/* Notes: open babel-repl */}
 
     //     <Message />
-    //     <Message msg="Hello World"/>
+    //     <Message msg="Hello World"/>         // Passing Props
     //   </div>
     // );
 
 
 
     /* Composing */
+
+    // Elements can be composed by passing them as children
 
     // const elm = (
     //   <div className="container">
@@ -74,4 +86,6 @@
 
     ReactDOM.render(elm, root);
   </script>
+
+
 </body>

@@ -23,7 +23,7 @@
     }
 
 
-
+    // Old school
     function NaiveTick() {
       const time = new Date().toLocaleTimeString();
       const elm = `<div className="container">
@@ -36,6 +36,8 @@
 
     /* checkbox example */
 
+    // checkbox state is preserved
+    // Reconcillation
     function ReactCheckbox() {
       const time = new Date().toLocaleTimeString();
 
@@ -50,6 +52,7 @@
         </div>
       );
 
+      // even on multiple ReactDOM.render call, only the real changes are actually applied to the DOM.
       ReactDOM.render(elm, root);
     }
 
@@ -67,6 +70,7 @@
         </div>
       </div>`;
 
+      // While element is inserted
       root.innerHTML = elm;
     }
 

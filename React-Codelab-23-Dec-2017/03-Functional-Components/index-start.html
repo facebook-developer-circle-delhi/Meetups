@@ -1,6 +1,10 @@
 <!-- React Components -->
 <!-- functional components, props, html or React, babel-repl, class based components, composing components -->
 
+<!--
+  Components are resusable
+ -->
+
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -11,6 +15,7 @@
   <script type="text/babel">
   const root = document.getElementById('root');
 
+  // JSX uses className instead of class. As class is a reserved in JavaScript
 
   const elm = (
     <div className="container">
@@ -18,8 +23,9 @@
       <div>Hello World</div>
       <div>Hello World</div>
     </div>
-  );
+  );    // JSX element with three children
 
   ReactDOM.render(elm, root);
 </script>
+
 </body>
