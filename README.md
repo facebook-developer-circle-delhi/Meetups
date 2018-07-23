@@ -9,7 +9,7 @@ A comprehensive list of all the **Facebook Developer Circle Delhi** Meetups with
 
 | Date | Meetup | Meetup URL | 
 | :--: | ------ | ---------- |
-| 23-Dec-2017 | [React CodeLab](./React-Codelab-23-Dec-2017) | |
-| 21-Jan-2018 | [Hands on Docker](./Hands-On-Docker-21-Jan-2018) | |
-| 16-Apr-2018 | [April Meetup](./April-Meetup-16-Apr-2018)| | 
-| 21-Jul-2018 | [Intro to AWS](./Intro-to-aws-21-July-2018) | |
+| 23-Dec-2017 | [React CodeLab](./React-Codelab-23-Dec-2017) | https://www.facebook.com/events/1540436582701992/ |
+| 21-Jan-2018 | [Hands on Docker](./Hands-On-Docker-21-Jan-2018) | https://www.facebook.com/events/1984471198479145/ |
+| 16-Apr-2018 | [April Meetup](./April-Meetup-16-Apr-2018)| https://fdcdelapr.splashthat.com/ | 
+| 21-Jul-2018 | [Intro to AWS](./Intro-to-aws-21-July-2018) | https://fdcdeljuly.splashthat.com/ |
