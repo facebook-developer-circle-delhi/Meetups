@@ -1,6 +1,6 @@
-# Meetup-Resources
+# Meetups
 
-Meetup related content for Facebook Developer Circle Delhi, NCR members. This repository gives you access to all the material of our past meetups.
+Meetup related content for Facebook Developer Circle Delhi, NCR members. This repository gives you access to all the material of our past meetups. For submitting a talk proposal, create an issue [here](https://github.com/facebook-developer-circle-delhi/Meetups/issues/new?template=custom.md)
 
 ## Meetups
 
