@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: Submitting a talk template
 about: Name of your talk
 
 ---
