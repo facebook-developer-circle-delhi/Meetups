@@ -1,0 +1,10 @@
+
+#import * from './generated/prisma.graphql'
+
+type Query {
+    items:[Item!]!
+}
+
+type Mutation{
+    createItem(data:ItemCreateInput):Item!
+}
