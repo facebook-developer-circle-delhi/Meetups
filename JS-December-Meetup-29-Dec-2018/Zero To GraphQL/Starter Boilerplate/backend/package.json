@@ -1,0 +1,23 @@
+{
+  "name": "talk-gql-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --ext js,graphql",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "schema": "graphql get-schema -p prisma"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "graphql": "^14.0.2",
+    "graphql-cli": "^3.0.3",
+    "graphql-yoga": "^1.16.9",
+    "nodemon": "^1.18.9",
+    "prisma-binding": "^2.2.12"
+  }
+}
