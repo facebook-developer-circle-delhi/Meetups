@@ -13,13 +13,13 @@ This repository contains resources used for the [Computer-Vision-Zero-To-One](ht
 pip install opencv-python
 ```
 
-##Resources##
+##Resources
 
 [Slides](https://docs.google.com/presentation/d/1WnMHvq18owQoGmDJeLXCfUgK6JN5jJ9MNBF-TuFulO4/edit?usp=sharing)
-
 [Jupyter Notebook](./Computer-Vision-Zero-To-One.ipynb)
+
 ---
 
-[GitHub](https://github.com/pratikgujral)  
-[LinkedIn](https://www.linkedin.com/in/pratikgujral/) 
+[GitHub](https://github.com/pratikgujral)
+[LinkedIn](https://www.linkedin.com/in/pratikgujral/)
 [Facebook](https://www.facebook.com/pratikgujral)
