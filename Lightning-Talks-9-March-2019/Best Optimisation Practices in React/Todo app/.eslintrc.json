@@ -1,0 +1,32 @@
+{
+    "env": {
+        "es6":     true,
+        "browser": true,
+        "node":    true,
+        "mocha":   true
+    },
+    "extends": ["eslint:recommended","plugin:react/recommended"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "esversion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/jsx-uses-react": "error",   
+        "react/jsx-uses-vars":
+        "error" ,
+        "no-unused-vars": [0],
+        "react/prop-types": [0],
+        "no-console": [0],
+        "react/display-name": [0]
+    }
+}
